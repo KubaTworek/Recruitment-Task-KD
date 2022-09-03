@@ -1,13 +1,33 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
 public class Zadanie3 {
-    /**
-     * Z publicznego API: https://jsonplaceholder.typicode.com pobierz wszystkie zapisane posty znajdujące się pod adresem
-     * https://jsonplaceholder.typicode.com/posts tak by po wywołaniu metody getPosts() można było wypisać wszystkie elementy w konsoli,
-     * podobnie jak wypisuje je przeglądarka po wejściu w link.
-     *
-     * Można skorzystać z dowolnych sposobów pobierania danych z API dostępnych dla języka Java.
-     * */
+    private static final String POSTS_URL = "https://jsonplaceholder.typicode.com/posts";
+    private static String streamToString(InputStream inputStream) {
+        return new Scanner(inputStream, StandardCharsets.UTF_8).useDelimiter("\\Z").next();
+    }
+
     public static String getPosts() {
-        return "";
+        String json = null;
+        try {
+            URL url = new URL(POSTS_URL);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoOutput(true);
+            connection.setInstanceFollowRedirects(false);
+            connection.setRequestMethod("GET");
+            connection.setRequestProperty("Content-Type", "application/json");
+            connection.setRequestProperty("charset", "utf-8");
+            connection.connect();
+            InputStream inStream = connection.getInputStream();
+            json = streamToString(inStream);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return json;
     }
 
     public static void main(String[] args) {
