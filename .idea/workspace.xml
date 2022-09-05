@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="230514a2-873f-4fd7-bdb5-8a6e3ea6d1d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Zadanie1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Zadanie2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Zadanie3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Zadanie3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Zadanie1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Zadanie1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,24 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/kuba/Documents/GitHub/Recruitment-Task-KD/src/main/java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "f1eec2614962088eebec9b88066ab141"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kuba/Documents/GitHub/Recruitment-Task-KD/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f1eec2614962088eebec9b88066ab141&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Zadanie1">
+  <component name="RunManager" selected="Application.Zadanie3">
     <configuration name="Zadanie1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Zadanie1" />
       <module name="Recruitment-Task-KD" />
@@ -76,9 +74,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Zadanie3" />
         <item itemvalue="Application.Zadanie1" />
         <item itemvalue="Application.Zadanie2" />
-        <item itemvalue="Application.Zadanie3" />
       </list>
     </recent_temporary>
   </component>
@@ -92,6 +90,7 @@
       <updated>1662073144393</updated>
       <workItem from="1662073145612" duration="5464000" />
       <workItem from="1662135401520" duration="606000" />
+      <workItem from="1662407552598" duration="820000" />
     </task>
     <servers />
   </component>

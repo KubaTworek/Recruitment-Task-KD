@@ -25,93 +25,24 @@ public class Zadanie1 {
 //            * 4 3 2 1 2 3 4
 //            * 4 3 2 2 2 3 4
 //            * 4 3 3 3 3 3 4
-//            * 4 4 4 4 4 4 4
+//            * 4 4 4 4 4 4 4  1 8 16 24
 //            *
 //            */
     public static String createPicture(int n) {
         int width = 2*n-1;
 
         int[][] tab2d = new int[width][width];
-        for(int i=0; i<width; i++){
-            for(int j=0; j<width; j++){
-                if(i < width/2){
-                    if(i==0 || i==width-1){
-                        tab2d[i][j] = n;
-                    }else
-                    if(j==0 || j==width-1){
-                        tab2d[i][j] = n;
-                    }else
-                    if(i==1 || i==width-2){
-                        tab2d[i][j] = n-i;
-                    }else
-                    if(j==1 || j==width-2){///
-                        tab2d[i][j] = n-1;
-                    }else
-                    if(i==2 || i==width-3){
-                        tab2d[i][j] = n-i;
-                    } else
-                    if(j==2 || j==width-3){
-                        tab2d[i][j] = n-j;
-                    }else
-                    if(i==3 || i==width-4){
-                        tab2d[i][j] = n-i;
-                    } else
-                    if(j==3 || j==width-4){
-                        tab2d[i][j] = n-j;
-                    } else
-                    if(i==4 || i==width-5){
-                        tab2d[i][j] = n-i;
-                    } else
-                    if(j==4 || j==width-5){
-                        tab2d[i][j] = n-j;
-                    } else
-                    if(i==5 || i==width-6){
-                        tab2d[i][j] = n-i;
-                    } else
-                    if(j==5 || j==width-6){
-                        tab2d[i][j] = n-j;
-                    }
-                } else {
-                    if(i==0 || i==width-1){
-                        tab2d[i][j] = n;
-                    }else
-                    if(j==0 || j==width-1){
-                        tab2d[i][j] = n;
-                    }else
-                    if(i==1 || i==width-2){
-                        tab2d[i][j] = 3;
-                    }else
-                    if(j==1 || j==width-2){
-                        tab2d[i][j] = 3;
-                    }else
-                    if(i==2 || i==width-3){
-                        tab2d[i][j] = 2;
-                    } else
-                    if(j==2 || j==width-3){
-                        tab2d[i][j] = 2;
-                    }else
-                    if(i==3 || i==width-4){
-                        tab2d[i][j] = 1;
-                    } else
-                    if(j==3 || j==width-4){
-                        tab2d[i][j] = 1;
-                    } else
-                    if(i==4 || i==width-5){
-                        tab2d[i][j] = 0;
-                    } else
-                    if(j==4 || j==width-5){
-                        tab2d[i][j] = 0;
-                    } else
-                    if(i==5 || i==width-6){
-                        tab2d[i][j] = 0;
-                    } else
-                    if(j==5 || j==width-6){
-                        tab2d[i][j] = 0;
-                    }
-                }
-
+        for(int i=0; i<n; i++){
+            for(int j = 0; j<width; j++){
+                if(width/2+i >= 0 && width/2+i < width && width/2+i-j >= 0 && width/2+i-j < width) tab2d[width/2+i][width/2+i-j] = i+1;
+                if(width/2-i >= 0 && width/2-i < width && width/2-i+j >= 0 && width/2-i+j < width) tab2d[width/2-i][width/2-i+j] = i+1;
+                if(width/2+i-j >= 0 && width/2+i-j < width && width/2-i >= 0 && width/2-i < width) tab2d[width/2+i-j][width/2-i] = i+1;
+                if(width/2-i+j >= 0 && width/2-i+j < width && width/2+i >= 0 && width/2+i < width) tab2d[width/2-i+j][width/2+i] = i+1;
             }
         }
+
+
+
         return stringifyTable(tab2d);
     }
 
@@ -127,6 +58,6 @@ public class Zadanie1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(createPicture(4));
+        System.out.println(createPicture(5));
     }
 }
